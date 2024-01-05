@@ -1,0 +1,20 @@
+<h1>Hello World!</h1>
+
+<p>THis is my First Page!!!</p>
+
+<p>My first {{ first_action|safe }}!!!</p>
+
+<p>{{stuff | striptags}}!!</p>
+
+<h3>Favorite Color:</h3>
+
+{% for list in favorite_color %}
+
+    {% if list == 41 %}
+        {{ list +  100 }}</br>
+    {% else %}
+        {{ list }}</br>
+    {% endif %}
+
+{% endfor %}
+
